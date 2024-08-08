@@ -13,7 +13,6 @@
     gap: 1rem;
 }
 
-
 .container {
     position: relative;
     background: -webkit-linear-gradient(to right, #333399, #ff00cc);
@@ -55,6 +54,8 @@
 
 .glass-card:active {
     transform: scale(0.95) rotateZ(1.7deg);
+    background-color: green !important;
+    color: white;
 }
 
 .glass-card i {
@@ -66,6 +67,18 @@
     font-size: 19px;
 }
 
+/*  */
+.glass-card.active {
+    background-color: green !important;
+    color: white;
+}
+
+.glass-card.active i,
+.glass-card.active p {
+    color: white;
+}
+
+/*  */
 .circle1,
 .circle2 {
     background: white;
@@ -90,8 +103,6 @@
     transform: translate(-50%, -50%);
 }
 
-
-
 /* 2 */
 .container2 {
     position: relative;
@@ -100,7 +111,8 @@
     padding: 2rem 1rem;
 }
 
-.container2 .glass-card {
+.container2 .glass-card,
+.divs-slider .glass-card {
     box-sizing: border-box;
     width: 98%;
     height: 100%;
@@ -121,10 +133,9 @@
     -webkit-user-select: none;
     font-weight: bolder;
     z-index: 1;
-
 }
 
-@media (min-width:2000px) {
+@media (min-width: 2000px) {
 
     .container,
     .container2 {
@@ -146,8 +157,7 @@
     }
 }
 
-
-@media (max-width:1060px) {
+@media (max-width: 1060px) {
 
     .container,
     .container2 {
@@ -159,7 +169,8 @@
         gap: 1rem;
     }
 }
-@media (max-width:768px) {
+
+@media (max-width: 768px) {
 
     .container,
     .container2 {
@@ -170,13 +181,15 @@
         justify-items: center;
         gap: 1rem;
     }
+
     .circle2 {
         bottom: 3%;
         left: 80%;
         transform: translate(-50%, -50%);
     }
 }
-@media (max-width:500px) {
+
+@media (max-width: 500px) {
 
     .container,
     .container2 {
@@ -187,6 +200,7 @@
         justify-items: center;
         gap: 1rem;
     }
+
     .circle2 {
         bottom: 3%;
         left: 80%;
@@ -194,19 +208,19 @@
     }
 }
 
-
-.banner-inner{
+.banner-inner {
     min-height: 25rem;
     width: 100%;
     display: flex;
 }
 
-.banner-inner>div:first-of-type{
+.banner-inner>div:first-of-type {
     background-image: url("./141643_original_3955x5932.jpg");
     background-position: center;
     background-size: cover;
 }
-.banner-inner>div:last-of-type{
+
+.banner-inner>div:last-of-type {
     display: flex;
     flex-direction: column-reverse;
     padding-left: 1rem;
@@ -214,16 +228,69 @@
     box-sizing: border-box;
     background-color: #059212;
 }
-.banner-inner>div:last-of-type>p{
+
+.banner-inner>div:last-of-type>p {
     font-size: 44px;
     position: relative;
     color: white;
 }
 
-.banner-inner>div{
+.banner-inner>div {
     width: 50%;
 }
 
-.auth{
-    background-color: #7bb346 !important;
+.auth {
+    background-color: #059212 !important;
+}
+
+/* slider  */
+.slider-main-container {
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    background-color: rgb(243, 243, 243);
+}
+
+.divs-slider {
+    width: 96% !important;
+}
+
+.divs-slider .slick-list {
+    height: 9rem;
+    padding: 10px 0;
+}
+
+.divs-slider {
+    margin: 1rem;
+}
+
+.divs-slider>div:hover {
+    cursor: pointer;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: black !important;
+    font-size: 36px !important;
+}
+
+.slick-next {
+    right: -11px !important;
+}
+
+.divs-slider .slick-slide {
+    margin: 0 10px !important;
+}
+
+.divs-slider .glass-card {
+    height: 8rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
+
+
+.slick-prev,
+.slick-next {
+    top: 43% !important;
 }

@@ -13,9 +13,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body>
-    <div>
+    <!-- <div>
       <center>
         <h1>Document Management System, #1</h1>
       </center>
@@ -124,7 +141,7 @@
       </div>
       <div class="circle1"></div>
       <div class="circle2"></div>
-    </div>
+    </div> -->
 
     <!-- 2 -->
     <div>
@@ -140,7 +157,7 @@
         </div>
       </div>
       <div class="container2">
-        <div class="glass-card">
+        <div class="glass-card active">
           <i class="fa-solid fa-user-secret"></i>
           <p>some text</p>
         </div>
@@ -241,8 +258,160 @@
           <p>some text</p>
         </div>
       </div>
-      <div class="circle1"></div>
-      <div class="circle2"></div>
     </div>
+
+    <!-- 3 -->
+    <div>
+      <center>
+        <h1>Document Management System, #3</h1>
+      </center>
+      <br />
+      <br />
+      <div class="banner-main">
+        <div class="banner-inner">
+          <div></div>
+          <div><p>Document Management System</p></div>
+        </div>
+      </div>
+      <center class="slider-main-container">
+        <div class="divs-slider">
+          <div class="glass-card">
+            <i class="fa-solid fa-user-secret"></i>
+            <p>some text</p>
+          </div>
+          <div class="glass-card">
+            <i class="fa-solid fa-user-secret"></i>
+            <p>some text</p>
+          </div>
+          <div class="glass-card">
+            <i class="fa-solid fa-user-secret"></i>
+            <p>some text</p>
+          </div>
+          <div class="glass-card">
+            <i class="fa-solid fa-user-secret"></i>
+            <p>some text</p>
+          </div>
+          <div class="glass-card">
+            <i class="fa-solid fa-user-secret"></i>
+            <p>some text</p>
+          </div>
+          <div class="glass-card">
+            <i class="fa-solid fa-user-secret"></i>
+            <p>some text</p>
+          </div>
+        </div>
+      </center>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- <script>
+      document.querySelectorAll(".glass-card").forEach((card) => {
+        card.addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+      });
+
+      //
+      var numOfItem;
+
+      function updateWindowWidth() {
+        const width = window.innerWidth;
+        if (width <= 450) {
+          numOfItem = 2;
+        } else if (width < 545) {
+          numOfItem = 3;
+        } else if (width < 800) {
+          numOfItem = 4;
+        } else {
+          numOfItem = 5;
+        }
+      }
+
+      function initializeSlider() {
+        $(".divs-slider").slick({
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          prevArrow:
+            '<button type="button" class="slick-prev">Previous</button>',
+          nextArrow: '<button type="button" class="slick-next">Next</button>',
+        });
+      }
+
+      window.addEventListener("resize", function () {
+        updateWindowWidth();
+        $(".services-slider").slick("unslick");
+        initializeSlider();
+      });
+
+      document.addEventListener("DOMContentLoaded", (event) => {
+        updateWindowWidth();
+        initializeSlider();
+      });
+
+      $(document).ready(function () {
+        updateWindowWidth();
+        initializeSlider();
+      });
+    </script> -->
+    <script>
+      document.querySelectorAll(".glass-card").forEach((card) => {
+        card.addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+      });
+    
+      var numOfItem;
+    
+      function updateWindowWidth() {
+        const width = window.innerWidth;
+        if (width <= 450) {
+          numOfItem = 2;
+        } else if (width < 545) {
+          numOfItem = 3;
+        } else if (width < 800) {
+          numOfItem = 4;
+        } else {
+          numOfItem = 5;
+        }
+      }
+    
+      function initializeSlider() {
+        $(".divs-slider").slick({
+          infinite: true,
+          slidesToShow: numOfItem,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          prevArrow:
+            '<button type="button" class="slick-prev">Previous</button>',
+          nextArrow: '<button type="button" class="slick-next">Next</button>',
+        });
+      }
+    
+      window.addEventListener("resize", function () {
+        updateWindowWidth();
+        $(".divs-slider").slick("unslick");
+        initializeSlider();
+      });
+    
+      document.addEventListener("DOMContentLoaded", (event) => {
+        updateWindowWidth();
+        initializeSlider();
+      });
+    
+      $(document).ready(function () {
+        updateWindowWidth();
+        initializeSlider();
+      });
+    </script>
+    
   </body>
 </html>
