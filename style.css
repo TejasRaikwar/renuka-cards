@@ -122,6 +122,8 @@
   font-size: 44px;
   position: relative;
   color: white;
+  word-wrap: break-word;
+  text-wrap: wrap;
 }
 
 .banner-inner > div {
