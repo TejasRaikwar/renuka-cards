@@ -153,6 +153,7 @@
   padding-left: 1rem;
   padding-bottom: 1rem;
   box-sizing: border-box;
+  justify-content: center;
   background-color: #106d38;
 }
 
