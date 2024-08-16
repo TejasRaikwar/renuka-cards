@@ -142,7 +142,7 @@
 }
 
 .banner-inner>div:first-of-type {
-  background-image: url("./141643_original_3955x5932.jpg");
+  background-image: url("./bg4.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -162,6 +162,7 @@
   color: white;
   word-wrap: break-word;
   text-wrap: wrap;
+  text-align: center;
 }
 
 .banner-inner>div {
